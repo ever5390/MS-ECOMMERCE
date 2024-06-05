@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: customer-service
+  data:
+    mongodb:
+      username: ejrosalesp
+      password: ejrosalesp
+      host: localhost
+      port: 2017
+      database: customer
+      authentication-database: admin
+server:
+  port: 8090
