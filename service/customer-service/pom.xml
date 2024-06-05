@@ -11,7 +11,7 @@
 	<groupId>com.erosalesp</groupId>
 	<artifactId>customer-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>customer</name>
+	<name>customer-service</name>
 	<description>Customer Microservice description</description>
 	<properties>
 		<java.version>17</java.version>
