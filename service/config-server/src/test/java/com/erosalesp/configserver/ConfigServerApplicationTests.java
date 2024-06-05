@@ -1,4 +1,4 @@
-package com.erosalesp.config_server;
+package com.erosalesp.configserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

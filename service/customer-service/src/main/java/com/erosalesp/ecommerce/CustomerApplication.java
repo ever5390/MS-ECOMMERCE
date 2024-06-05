@@ -1,4 +1,4 @@
-package com.erosalesp.customer;
+package com.erosalesp.ecommerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
