@@ -3,9 +3,11 @@ services:
     container_name: ms_pg_sql
     image: postgres
     environment:
-      POSTGRES_USER: ejrosalesp
-      POSTGRES_PASSWORD: ejrosalesp
-      PGDATA: /var/lib/postgresql/data
+      - DATABASE_HOST=127.0.0.1
+      - POSTGRES_USER=ejrosalesp
+      - POSTGRES_PASSWORD=ejrosalesp
+      - POSTGRES_DB=postgres
+      - PGDATA=/var/lib/postgresql/data
     volumes:
       - postgres:/var/lib/postgresql/data
     ports:
@@ -28,6 +30,8 @@ services:
     networks:
       - microservices-net
     restart: unless-stopped
+    depends_on:
+      - postgresql
 
   mongodb:
     image: mongo
